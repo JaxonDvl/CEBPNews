@@ -45,6 +45,7 @@ public class Sender {
 
         // send the message
         queueSender.send(message);
+        queueSender.send(message);
 
         System.out.println("sent: " + message.getText());
 
