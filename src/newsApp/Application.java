@@ -1,6 +1,6 @@
 package newsApp;
 
-import eventBus.EventService;
+import eventDispatcher.EventService;
 import java.util.Date;
 public class Application {
 
@@ -16,6 +16,8 @@ public class Application {
 
 		EventService.instance().Publish(new SportEvent("Cluj","Poli-UTA",new Date(),50));
 		EventService.instance().Publish(new SportEvent("Timisoara","Steaua-Dinamo",new Date(),2000));
+
+
 	}
 
 }

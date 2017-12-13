@@ -1,6 +1,6 @@
 package newsApp;
-import eventBus.Event;
-import eventBus.Filter;
+import eventDispatcher.Event;
+import eventDispatcher.Filter;
 
 
 public class SportPriceFilter implements Filter{

@@ -1,9 +1,9 @@
 package newsApp;
-import eventBus.Event;
+import eventDispatcher.Event;
 
-import eventBus.EventService;
-import eventBus.Filter;
-import eventBus.Subscriber;
+import eventDispatcher.EventService;
+import eventDispatcher.Filter;
+import eventDispatcher.Subscriber;
 
 public class SportEventSubscriber extends Subscriber {
 	private String name;

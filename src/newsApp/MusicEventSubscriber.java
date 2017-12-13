@@ -1,8 +1,8 @@
 package newsApp;
-import eventBus.Event;
-import eventBus.EventService;
-import eventBus.Filter;
-import eventBus.Subscriber;
+import eventDispatcher.Event;
+import eventDispatcher.EventService;
+import eventDispatcher.Filter;
+import eventDispatcher.Subscriber;
 
 public class MusicEventSubscriber extends Subscriber {
 	
@@ -18,6 +18,10 @@ public class MusicEventSubscriber extends Subscriber {
 	{
 		this.name=subscriberName;
 		EventService.instance().subscribe(MusicEvent.class,filter, this);
+	}
+	public void unsubscribe(){
+//		EventService.instance().unsubscribe();
+	//todo implement this
 	}
 	@Override
 	public void inform(Event event) {

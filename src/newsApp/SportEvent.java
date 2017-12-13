@@ -2,7 +2,7 @@ package newsApp;
 
 import java.util.Date;
 
-import eventBus.Event;
+import eventDispatcher.Event;
 
 public class SportEvent implements Event {
 	  

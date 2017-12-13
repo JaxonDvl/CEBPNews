@@ -1,4 +1,4 @@
-package eventBus;
+package eventDispatcher;
 
 public abstract class Subscriber {
 

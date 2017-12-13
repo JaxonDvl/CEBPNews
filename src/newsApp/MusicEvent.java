@@ -1,5 +1,5 @@
 package newsApp;
-import eventBus.Event;
+import eventDispatcher.Event;
 
 import java.util.Date;
 
