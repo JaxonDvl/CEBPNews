@@ -16,8 +16,8 @@ import javax.jms.QueueConnectionFactory;
 public class Receiver {
 
     public static void main(String args[]) throws Exception {
-        Properties env = new Properties();					   				env.put(Context.INITIAL_CONTEXT_FACTORY,
-                "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
+        Properties env = new Properties();
+        env.put(Context.INITIAL_CONTEXT_FACTORY, "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
         env.put(Context.PROVIDER_URL, "tcp://localhost:61616");
         env.put("queue.queueSampleQueue","MyNewQueue");
         // get the initial context

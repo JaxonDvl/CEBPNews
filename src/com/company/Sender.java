@@ -18,8 +18,7 @@ public class Sender {
 
     public static void main(String[] args) throws Exception {
         Properties env = new Properties();
-        env.put(Context.INITIAL_CONTEXT_FACTORY,
-                "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
+        env.put(Context.INITIAL_CONTEXT_FACTORY, "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
         env.put(Context.PROVIDER_URL, "tcp://localhost:61616");
         env.put("queue.queueSampleQueue", "MyNewQueue");
 
